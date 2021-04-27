@@ -1,4 +1,7 @@
 def countWays(n) :
+    if n==0:
+        return 1
+
     temp = [0] * (n + 2)
     temp[0] = 1
     temp[1] = 1
@@ -10,7 +13,7 @@ def countWays(n) :
     return temp[n]
 
 
-print(countWays(int(input("Enter Number of steps : "))))
+print("Total number of ways = ",countWays(int(input("Enter Number of steps : "))))
 
 
  
